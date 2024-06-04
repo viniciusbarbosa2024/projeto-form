@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h2>Formulário</h1>
+        <h1>Venda fácil seu carro</h1>
+        <p>Descreva as características e marque os opcionais que ele possui</p>
+        <form action="cadastro.php" method="post">
+
+            <div>
+                <label for="titulo">Título do anúncio</label>
+                <input type="text" name="titulo" id="titulo">
+            </div>
+
+            <div>
+                <label for="preco">Preço</label> 
+                <input type="number" name="preco" id="preco">
+            </div>
+
+            <div>
+                <label for="descricao">Descrição</label> 
+                <textarea name="descricao" id="descricao" cols="30" rows="4"></textarea>
+            </div>
+
+            <div>
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" id="marca">
+            </div>
+
+            <div>
+                <label for="modelo">Modelo</label>
+                <input type="text" name="modelo" id="modelo">
+            </div>
+
+            <div>
+                <label for="km">Kilometragem</label>
+                <input type="number" name="km" id="km">
+            </div>
+
+            <div>
+                <label for="data">Data de compra</label>
+                <input type="date" name="data" id="data">
+            </div>
+
+            <div>
+                Tipo de câmbio
+                
+                <input type="radio" name="cambio" id="manual">
+                <label for="manual">Manual</label>
+
+                <input type="radio" name="cambio" id="automatico">
+                <label for="automatico">Automático</label>
+            </div>
+
+            <div>
+                Opcionais 
+
+                <ul>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
