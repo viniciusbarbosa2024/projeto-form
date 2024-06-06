@@ -11,51 +11,51 @@
 
     </header>
     <main>
-        <h2>Formulário</h1>
+        <div id="formulario"><span>Formulário</span></div>
         <h1>Venda fácil seu carro</h1>
         <p>Descreva as características e marque os opcionais que ele possui</p>
         <form action="cadastro.php" method="post">
 
             <div>
-                <label for="titulo">Título do anúncio</label>
-                <input type="text" name="titulo" id="titulo">
+                <label for="titulo" class="caracteristicas">Título do anúncio</label>
+                <input type="text" name="titulo" id="titulo" class="cxinput">
             </div>
 
             <div>
-                <label for="preco">Preço</label> 
-                <input type="number" name="preco" id="preco">
+                <label for="preco" class="caracteristicas">Preço</label> 
+                <input type="number" name="preco" id="preco" class="cxinput">
             </div>
 
             <div>
-                <label for="descricao">Descrição</label> 
-                <textarea name="descricao" id="descricao" cols="30" rows="4"></textarea>
+                <label for="descricao" class="caracteristicas">Descrição</label> 
+                <textarea name="descricao" id="descricao" cols="30" rows="4" class="cxinput"></textarea>
             </div>
 
             <div>
-                <label for="marca">Marca</label>
-                <input type="text" name="marca" id="marca">
+                <label for="marca" class="caracteristicas">Marca</label>
+                <input type="text" name="marca" id="marca" class="cxinput">
             </div>
 
             <div>
-                <label for="modelo">Modelo</label>
-                <input type="text" name="modelo" id="modelo">
+                <label for="modelo" class="caracteristicas">Modelo</label>
+                <input type="text" name="modelo" id="modelo" class="cxinput">
             </div>
 
             <div>
-                <label for="km">Kilometragem</label>
-                <input type="number" name="km" id="km">
+                <label for="km" class="caracteristicas">Kilometragem</label>
+                <input type="number" name="km" id="km" class="cxinput">
             </div>
 
             <div>
-                <label for="data">Data de compra</label>
-                <input type="date" name="data" id="data">
+                <label for="data" class="caracteristicas">Data de compra</label>
+                <input type="date" name="data" id="data" class="cxinput">
             </div>
 
             <div>
-                Tipo de câmbio
+                <span class="caracteristicas">Tipo de câmbio</span>
                 
                 <input type="radio" name="cambio" id="manual">
-                <label for="manual">Manual</label>
+                <label for="manual" >Manual</label>
 
                 <input type="radio" name="cambio" id="automatico">
                 <label for="automatico">Automático</label>
@@ -101,7 +101,7 @@
             </div>
 
             <div>
-                <label for="foto">Foto do carro</label>
+                <label for="foto" class="caracteristicas">Foto do carro</label>
                 <input type="file" name="foto" id="foto">
             </div>
         </form>

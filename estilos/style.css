@@ -18,4 +18,50 @@ header {
 main {
     max-width: 800px;
     background-color: white;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+main div#formulario {
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.295);
+    padding: 10px;
+    margin: 0px -20px;
+}
+
+main div#formulario span {
+    padding: 10px;
+    color:rgb(1, 83, 1);
+    border-bottom: 3px solid rgb(1, 83, 1);
+    text-transform: uppercase;
+}
+
+main h1 {
+    padding: 10px 0px;
+}
+
+main p {
+    padding-bottom: 20px;
+}
+
+main .caracteristicas {
+    display: block;
+    font-size: 1.3em;
+    padding: 10px 0px;
+}
+
+main .caracteristicas::after {
+    content: ' *';
+    color: red;
+}
+
+main .cxinput {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+main textarea#descricao {
+    border: 1px solid rgba(0, 0, 0, 0.253);
 }
