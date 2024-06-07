@@ -18,43 +18,43 @@
 
             <div>
                 <label for="titulo" class="caracteristicas">Título do anúncio</label>
-                <input type="text" name="titulo" id="titulo" class="cxinput">
+                <input type="text" name="titulo" id="titulo" class="cxinput" placeholder="Um título para anunciar seu carro" required>
             </div>
 
             <div>
                 <label for="preco" class="caracteristicas">Preço</label> 
-                <input type="number" name="preco" id="preco" class="cxinput">
+                <input type="number" name="preco" id="preco" class="cxinput" placeholder="Defina um preço" required>
             </div>
 
             <div>
                 <label for="descricao" class="caracteristicas">Descrição</label> 
-                <textarea name="descricao" id="descricao" cols="30" rows="4" class="cxinput"></textarea>
+                <textarea name="descricao" id="descricao" cols="30" rows="4" class="cxinput" placeholder="Aqui você coloca os detalhes do veículo,por exemplo se ele tem algum arranhão" required></textarea>
             </div>
 
             <div>
                 <label for="marca" class="caracteristicas">Marca</label>
-                <input type="text" name="marca" id="marca" class="cxinput">
+                <input type="text" name="marca" id="marca" class="cxinput" placeholder="Digite a marca do veículo" required>
             </div>
 
             <div>
                 <label for="modelo" class="caracteristicas">Modelo</label>
-                <input type="text" name="modelo" id="modelo" class="cxinput">
+                <input type="text" name="modelo" id="modelo" class="cxinput" placeholder="Digite o modelo do veículo" required>
             </div>
 
             <div>
                 <label for="km" class="caracteristicas">Kilometragem</label>
-                <input type="number" name="km" id="km" class="cxinput">
+                <input type="number" name="km" id="km" class="cxinput" placeholder="Digite a kilometragem do veículo" required>
             </div>
 
             <div>
                 <label for="data" class="caracteristicas">Data de compra</label>
-                <input type="date" name="data" id="data" class="cxinput">
+                <input type="date" name="data" id="data" class="cxinput" required>
             </div>
 
-            <div>
+            <div id="tipocambio">
                 <span class="caracteristicas">Tipo de câmbio</span>
                 
-                <input type="radio" name="cambio" id="manual">
+                <input type="radio" name="cambio" id="manual" checked>
                 <label for="manual" >Manual</label>
 
                 <input type="radio" name="cambio" id="automatico">
@@ -62,7 +62,7 @@
             </div>
 
             <div>
-                Opcionais 
+                <span id="titulo-opcionais">Opcionais</span> 
 
                 <ul>
                     <li>
@@ -102,7 +102,11 @@
 
             <div>
                 <label for="foto" class="caracteristicas">Foto do carro</label>
-                <input type="file" name="foto" id="foto">
+                <input type="file" name="foto" id="foto" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Cadastrar" id="cadastrar">
             </div>
         </form>
     </main>

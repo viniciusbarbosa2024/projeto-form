@@ -44,7 +44,8 @@ main p {
     padding-bottom: 20px;
 }
 
-main .caracteristicas {
+main .caracteristicas ,
+#titulo-opcionais {
     display: block;
     font-size: 1.3em;
     padding: 10px 0px;
@@ -64,4 +65,29 @@ main .cxinput {
 
 main textarea#descricao {
     border: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+main #tipocambio {
+    padding: 15px 0px;
+}
+
+
+main ul {
+    list-style-type: none;
+    columns: 2;
+}
+
+main #cadastrar {
+    margin: 20px 0px;
+    padding: 10px 20px;
+    background-color:rgb(1, 83, 1);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0px;
+}
+
+main #cadastrar:hover {
+    background-color:rgb(200, 247, 223);
+    color: black;
 }
